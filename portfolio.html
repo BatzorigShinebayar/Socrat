@@ -1,0 +1,71 @@
+{% extends 'web/base/base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block header %}
+    <title>Portfolio</title>
+{% endblock %}
+
+{% block Body %}
+<!-- Hero Start -->
+<section class="bg-half border-bottom d-table w-100" style="background: url({% static 'images/bg/portfolio.jpg' %}) center center;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="title-heading text-center">
+                    <h3 class="font-weight-normal text-white mb-4"><span class="font-weight-bold">Classic</span>
+                        Portfolio </h3>
+                </div>
+            </div>  <!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<!-- Start Classic Work -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            {% for portfolio in portfolios %}
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{{ portfolio.image.url }}" class="img-fluid" alt="">
+                    </div>
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">{{ portfolio.slug }}</a></h5>
+                        <p class="text-muted">{{ portfolio.description }}</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary"
+                                     style="width:{{ p }} %;">
+                                    <div class="progress-value d-block text-muted h6">{{ p }}%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Investment :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">{{ portfolio.finance }}</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Type :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">{{ portfolio.sector }}</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">See More <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+            {% endfor %}
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!-- End Classic Work -->
+{% endblock %}

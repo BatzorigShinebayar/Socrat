@@ -1,0 +1,779 @@
+{% extends 'web/base/base.html' %}
+{% load static %}
+{% block header %}
+    <title>Home Page</title>
+{% endblock %}
+
+{% block Body %}
+<!-- Hero Start -->
+<section class="bg-half-170 bg-digital-marketing border-bottom d-table w-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title-heading">
+                    <h4 class="heading text-light mb-4">Empower Your Business <br><span
+                            class="font-weight-bold text-white">Better & Faster</span></h4>
+                    <p class="text-white-50 para-desc mb-0">It is a long established fact that a reader will be
+                        distracted by the readable content of a page when looking at its layout.</p>
+                    <div class="watch-video mt-4 pt-2">
+                        <a href="javascript:void(0)" class="btn btn-pills btn-light mb-2">Get Started</a>
+                        <a href="http://vimeo.com/99025203" class="video-play-icon watch text-light mb-2 ml-2"><i
+                                class="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-pill bg-light text-dark position-relative play play-iconbar"></i>
+                            Watch now !</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="position-relative ml-lg-4">
+                    <img src="{% static 'images/digital/hero.jpg' %}" class="img-fluid digital-hero rounded-pill"
+                         alt="">
+                    <div class="play-icon">
+                        <a href="http://vimeo.com/287684225" class="play-btn video-play-icon">
+                            <i class="mdi mdi-play mdi-24px text-primary rounded-circle bg-primary shadow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Services Start -->
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="section-title">
+                    <h6 class="text-muted">Services</h6>
+                    <h4 class="title mb-4">Our Solutions</h4>
+                    <p class="text-muted para-desc mb-0">It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.</p>
+                    <div class="mt-2">
+                        <a href="javascript:void(0)" class="text-primary">See more <i data-feather="arrow-right"
+                                                                                      class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="feature feature-transition shadow p-4 rounded">
+                    <div class="icon text-center rounded-circle">
+                        <i data-feather="settings" class="fea icon-m-md feature-icon text-primary"></i>
+                    </div>
+                    <h5 class="mt-2">Management & Marketing</h5>
+                    <p class="text-muted mb-0">It seems that only fragments of the original text remain in the Lorem
+                        Ipsum texts used today</p>
+                    <div class="mt-3 text-right">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-outline-primary"><i
+                                data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                <div class="feature feature-transition shadow p-4 rounded">
+                    <div class="icon text-center rounded-circle">
+                        <i data-feather="server" class="fea icon-m-md feature-icon text-primary"></i>
+                    </div>
+                    <h5 class="mt-2">SEO Services</h5>
+                    <p class="text-muted mb-0">It seems that only fragments of the original text remain in the Lorem
+                        Ipsum texts used today</p>
+                    <div class="mt-3 text-right">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-outline-primary"><i
+                                data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature feature-transition shadow p-4 rounded">
+                    <div class="icon text-center rounded-circle">
+                        <i data-feather="aperture" class="fea icon-m-md feature-icon text-primary"></i>
+                    </div>
+                    <h5 class="mt-2">Consulting</h5>
+                    <p class="text-muted mb-0">It seems that only fragments of the original text remain in the Lorem
+                        Ipsum texts used today</p>
+                    <div class="mt-3 text-right">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-outline-primary"><i
+                                data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature feature-transition shadow p-4 rounded">
+                    <div class="icon text-center rounded-circle">
+                        <i data-feather="linkedin" class="fea icon-m-md feature-icon text-primary"></i>
+                    </div>
+                    <h5 class="mt-2">Social Marketing</h5>
+                    <p class="text-muted mb-0">It seems that only fragments of the original text remain in the Lorem
+                        Ipsum texts used today</p>
+                    <div class="mt-3 text-right">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-outline-primary"><i
+                                data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature feature-transition shadow p-4 rounded">
+                    <div class="icon text-center rounded-circle">
+                        <i data-feather="command" class="fea icon-m-md feature-icon text-primary"></i>
+                    </div>
+                    <h5 class="mt-2">Marketing Analysis</h5>
+                    <p class="text-muted mb-0">It seems that only fragments of the original text remain in the Lorem
+                        Ipsum texts used today</p>
+                    <div class="mt-3 text-right">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-outline-primary"><i
+                                data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-12 text-center mt-4 pt-2">
+                <a href="javascript:void(0)" class="btn btn-outline-primary">See more solutions <i
+                        data-feather="corner-down-right" class="fea icon-sm"></i></a>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Services End -->
+
+<!-- Banner Start-->
+<section class="section">
+    <div class="container-fluid">
+        <div class="rounded-pill py-5" style="background: url({% static 'images/coworking/bg04.jpg' %});">
+            <div class="row my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-7 col-12">
+                            <div class="section-title text-center text-md-left p-3 p-sm-0">
+                                <h1 class="text-white mb-0">Working together, to create something unique</h1>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-4 col-md-5 col-12 mt-5 mt-sm-0 pt-5 pt-sm-0">
+                            <div class="play-icon">
+                                <a href="http://vimeo.com/287684225" class="video-play-icon">
+                                    <i class="mdi mdi-play mdi-24px text-white rounded-circle bg-primary shadow"></i>
+                                </a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end row-->
+        </div><!--end img-->
+    </div><!--end container-fluid-->
+</section>
+<!-- End Banner -->
+
+<!-- Start section -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                        <div class="rounded text-center shadow-large position-relative overflow-hidden">
+                            <img src="{% static 'images/charity/ab01.jpg' %}" class="img-fluid" alt="">
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                <div class="rounded text-center shadow-large position-relative overflow-hidden">
+                                    <img src="{% static 'images/charity/ab02.jpg' %}" class="img-fluid" alt="">
+                                </div>
+                            </div><!--end col-->
+
+                            <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                <div class="rounded text-center shadow-large position-relative overflow-hidden">
+                                    <img src="{% static 'images/charity/ab03.jpg' %}" class="img-fluid" alt="">
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end col-->
+
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                <div class="section-title ml-lg-5">
+                    <h6 class="text-muted">About us</h6>
+                    <h2 class="mb-4"><span class="font-weight-bold">Helping</span> Today</h2>
+                    <p class="text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have
+                        originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or
+                        less corresponds to 'proper' Latin.</p>
+                    <h6>Charity Facts :</h6>
+                    <ul class="list-unstyled feature-list text-muted px-0 mb-0">
+                        <li><i class="mdi mdi-circle-medium text-primary mdi-18px h5 mr-2"></i>Corporate Sponsorships
+                        </li>
+                        <li><i class="mdi mdi-circle-medium text-primary mdi-18px h5 mr-2"></i>Selling Goods and
+                            Services
+                        </li>
+                        <li><i class="mdi mdi-circle-medium text-primary mdi-18px h5 mr-2"></i>Individual Donations. Of
+                            all donations made to nonprofits
+                        </li>
+                    </ul>
+
+                    <div class="row justify-content-center" id="counter">
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="counter-box text-center">
+                                <h4 class="counter-value mt-3" data-count="1251">95</h4>
+                                <h6 class="counter-head font-weight-normal">Happy Donors</h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="counter-box text-center">
+                                <h4 class="counter-value mt-3" data-count="53">1</h4>
+                                <h6 class="counter-head font-weight-normal">Countries</h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="counter-box text-center">
+                                <h4 class="counter-value mt-3" data-count="108">15</h4>
+                                <h6 class="counter-head font-weight-normal">Volunteers</h6>
+                            </div><!--end counter box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Section -->
+
+<!-- Start Causes -->
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h6 class="text-muted">Donate Now</h6>
+                    <h2 class="mb-4">Our Donation <span class="font-weight-bold">Causes</span></h2>
+                    <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be
+                        distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/charity/cause01.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex align-items-center author-desc">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">Charitious</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">Donate For Food</a></h5>
+                        <p class="text-muted">If you use this site regularly and would like to help keep the site on the
+                            Internet</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary" style="width:50%;">
+                                    <div class="progress-value d-block text-muted h6">50%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Raised :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 50000.0</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Goal :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 100000.0</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Donate now <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/charity/cause02.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex align-items-center author-desc">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">Charitious</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">Home For Homeless</a></h5>
+                        <p class="text-muted">If you use this site regularly and would like to help keep the site on the
+                            Internet</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary" style="width:10%;">
+                                    <div class="progress-value d-block text-muted h6">10%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Raised :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 80000.0</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Goal :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 800000.0</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Donate now <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/charity/cause03.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex align-items-center author-desc">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">Charitious</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">Holyday Gifts In Kind</a></h5>
+                        <p class="text-muted">If you use this site regularly and would like to help keep the site on the
+                            Internet</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary" style="width:33%;">
+                                    <div class="progress-value d-block text-muted h6">33%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Raised :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 50000.0</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Goal :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 150000.0</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Donate now <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/charity/cause04.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex align-items-center author-desc">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">Charitious</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">For clean Water in Africa</a></h5>
+                        <p class="text-muted">If you use this site regularly and would like to help keep the site on the
+                            Internet</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary" style="width:66%;">
+                                    <div class="progress-value d-block text-muted h6">66%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Raised :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 26000.0</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Goal :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 39000.0</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Donate now <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/charity/cause05.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex align-items-center author-desc">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">Charitious</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">Health and Rights</a></h5>
+                        <p class="text-muted">If you use this site regularly and would like to help keep the site on the
+                            Internet</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary" style="width:60%;">
+                                    <div class="progress-value d-block text-muted h6">60%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Raised :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 144000.0</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Goal :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 240000.0</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Donate now <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/charity/cause06.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex align-items-center author-desc">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">Charitious</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="text-dark title">Food For Orphan</a></h5>
+                        <p class="text-muted">If you use this site regularly and would like to help keep the site on the
+                            Internet</p>
+
+                        <div class="progress-box mt-4 pt-3">
+                            <div class="progress rounded-0">
+                                <div class="progress-bar rounded-0 position-relative bg-primary" style="width:90%;">
+                                    <div class="progress-value d-block text-muted h6">90%</div>
+                                </div>
+                            </div>
+                        </div><!--end process box-->
+
+                        <div class="fund-detail d-flex justify-content-between mt-4">
+                            <div>
+                                <h6 class="text-primary">Raised :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 225000.0</h6>
+                            </div>
+                            <div class="text-right">
+                                <h6 class="text-primary">Goal :</h6>
+                                <h6 class="mb-0 text-muted h6 font-weight-normal">$ 250000.0</h6>
+                            </div>
+                        </div><!--end fund details-->
+
+                        <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Donate now <i data-feather="chevron-right"
+                                                                                            class="fea icon-sm"></i></a>
+                        </div><!--end button-->
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-12 text-center mt-4 pt-2">
+                <a href="javascript:void(0)" class="btn btn-primary">See More Causes</a>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!-- End Cause-->
+
+<!-- Feedback Start -->
+<section class="section pt-4">
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <i data-feather="message-circle" class="fea icon-md text-primary"></i>
+                    <h4 class="title mt-3 mb-4">What Client's Say About Us ?</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be
+                        distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 order-md-1 order-2 mt-4 pt-2">
+                <div class="testi-hero position-relative overflow-hidden">
+                    <img src="{% static 'images/digital/testi.jpg' %}" class="img-fluid rounded-pill" alt="">
+                    <div class="bg-overlay rounded-pill"></div>
+                    <div class="content">
+                        <p class="text-light font-italic h5 mb-0">" It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout. "</p>
+                        <div class="mt-3">
+                            <a href="javascript:void(0)" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-8 col-md-6  order-md-2 order-1 mt-4 pt-2">
+                <div id="two-post" class="owl-carousel owl-theme">
+                    <div class="d-flex p-4 mt-1 m-3 shadow rounded-pill">
+                        <img src="{% static 'images/client/01.jpg' %}" class="avatar avatar-md-sm rounded-circle" alt="">
+                        <div class="content ml-3">
+                            <h6 class="mb-0">Calvin Carlo</h6>
+                            <small class="text-muted">CEO</small>
+                            <p class="text-muted mb-0 mt-2 font-italic">" Its function as a filler or as a tool for
+                                comparing the visual impression of different typefaces. "</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex p-4 mt-1 m-3 shadow rounded-pill">
+                        <img src="{% static 'images/client/02.jpg' %}" class="avatar avatar-md-sm rounded-circle" alt="">
+                        <div class="content ml-3">
+                            <h6 class="mb-0">Amanda Lair</h6>
+                            <small class="text-muted">Founder</small>
+                            <p class="text-muted mb-0 mt-2 font-italic">" Dummy text is text that is used in the
+                                publishing industry or by web designers to occupy the space which will later be filled
+                                with 'real' content. "</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex p-4 mt-1 m-3 shadow rounded-pill">
+                        <img src="{% static 'images/client/03.jpg' %}" class="avatar avatar-md-sm rounded-circle" alt="">
+                        <div class="content ml-3">
+                            <h6 class="mb-0">Cristino Murfhy</h6>
+                            <small class="text-muted">Manager</small>
+                            <p class="text-muted mb-0 mt-2 font-italic">" The publishing industry or by web designers to
+                                occupy the space which will later be filled with 'real' content. "</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex p-4 mt-1 m-3 shadow rounded-pill">
+                        <img src="{% static 'images/client/04.jpg' %}" class="avatar avatar-md-sm rounded-circle" alt="">
+                        <div class="content ml-3">
+                            <h6 class="mb-0">Crista Mojo</h6>
+                            <small class="text-muted">CFA</small>
+                            <p class="text-muted mb-0 mt-2 font-italic">" Dummy text is text that is used in the
+                                industry or by web designers to occupy the space which will later be filled with 'real'
+                                content. "</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Work & Testi End -->
+
+<!-- News & Blog Start -->
+<section class="section">
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-4">Latest news & Blog</h4>
+                    <p class="text-muted mx-auto para-desc mb-0">It is a long established fact that a reader will be
+                        distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/blog/01.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex author-desc align-items-center">
+                            <img src="{% static 'images/client/05.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="shape overflow-hidden text-white">
+                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="title text-dark">Hands on: Google Stadia review</a></h5>
+                        <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is
+                            of great importance</p>
+
+                        <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                            <ul class="list-unstyled mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i
+                                        data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i
+                                        data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="text-dark read">Read More <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/blog/02.jpg' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex author-desc align-items-center">
+                            <img src="{% static 'images/client/01.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="shape overflow-hidden text-white">
+                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="title text-dark">Microsoft Surface Studio 2</a></h5>
+                        <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is
+                            of great importance</p>
+
+                        <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                            <ul class="list-unstyled mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i
+                                        data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i
+                                        data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="text-dark read">Read More <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                    <div class="blog-img overflow-hidden position-relative">
+                        <img src="{% static 'images/blog/03.jpg ' %}" class="img-fluid" alt="">
+                        <div class="overlay bg-dark"></div>
+                        <div class="d-flex author-desc align-items-center">
+                            <img src="{% static 'images/client/02.jpg' %}"
+                                 class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                            <div class="author">
+                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                <p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="shape overflow-hidden text-white">
+                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content p-4">
+                        <h5><a href="javascript:void(0)" class="title text-dark">Hands on: Google Pixel 3a XL</a></h5>
+                        <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is
+                            of great importance</p>
+
+                        <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                            <ul class="list-unstyled mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i
+                                        data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i
+                                        data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="text-dark read">Read More <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--end post-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End News & Blog -->
+
+{% endblock %}
