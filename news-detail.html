@@ -1,0 +1,329 @@
+{% extends 'web/base/base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block header %}
+    <title>News Detail</title>
+{% endblock %}
+{% block Body %}
+<!-- Hero Start -->
+<section class="bg-half-260 pb-0 d-table w-100">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-12">
+
+                <div class="title-heading text-center">
+                    <h3 class="font-weight-normal mb-0"> {{ news.title }} </h3>
+                    <ul class="list-unstyled mb-0 mt-3">
+<!--                        <li class="list-inline-item user text-muted mr-2"><i data-feather="user" class="fea icon-sm"></i> Lisa Marvel</li>-->
+                        <li class="list-inline-item date text-muted"><i data-feather="calendar" class="fea icon-sm"></i>{{ news.created_date}}</li>
+                    </ul>
+                    <div class="mt-5">
+                        <img src="images/blog/single-1.jpg" class="img-fluid rounded" alt="">
+                    </div>
+                </div>
+
+            </div>  <!--end col-->
+
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<!-- Post detail Start -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-12">
+                <div class="blog-post single-blog-post p-4 shadow rounded position-relative overflow-hidden">
+                    <div class="blog-content">
+                        <div class="post-meta d-flex justify-content-between mb-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                            </ul>
+                            <div><i data-feather="tag" class="fea icon-sm mr-1"></i>{{news.type}}</div>
+                        </div>
+
+                        <p class="text-muted">{{news.description}}</p>
+
+                        <div class="sidebar">
+                            <div class="widget">
+                                <div class="tagcloud mt-3">
+                                    {% for news_type in news_type %}
+                                    <a href="jvascript:void(0)" class="rounded">{{news_type.title}}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="mb-0">Related Post :</h5>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-12 mt-4 pt-2">
+                                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                                    <div class="blog-img overflow-hidden position-relative">
+                                        <img src="images/blog/06.jpg" class="img-fluid" alt="">
+                                        <div class="overlay bg-dark"></div>
+                                        <div class="d-flex author-desc align-items-center">
+                                            <img src="images/client/05.jpg" class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                                            <div class="author">
+                                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a><p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="shape overflow-hidden text-white">
+                                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content p-4">
+                                        <h5><a href="javascript:void(0)" class="title text-dark">Hands on: Beats PowerBeats Pro</a></h5>
+                                        <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is of great importance</p>
+
+                                        <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="text-dark read">Read More <i class="mdi mdi-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end post-->
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-12 mt-4 pt-2">
+                                <div class="blog-post shadow rounded position-relative overflow-hidden">
+                                    <div class="blog-img overflow-hidden position-relative">
+                                        <img src="images/blog/07.jpg" class="img-fluid" alt="">
+                                        <div class="overlay bg-dark"></div>
+                                        <div class="d-flex author-desc align-items-center">
+                                            <img src="images/client/02.jpg" class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
+                                            <div class="author">
+                                                <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a><p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="shape overflow-hidden text-white">
+                                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content p-4">
+                                        <h5><a href="javascript:void(0)" class="title text-dark">Spotify Premium now has 100 million subscribers</a></h5>
+                                        <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is of great importance</p>
+
+                                        <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="text-dark read">Read More <i class="mdi mdi-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end post-->
+                            </div><!--end col-->
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-2">
+                    <div class="p-4 shadow rounded position-relative overflow-hidden">
+                        <h5>Comments :</h5>
+                        <ul class="media-list list-unstyled mb-0">
+                            {% for comment in comments %}
+                            <li class="comment-desk mt-4">
+                                <a href="#" class="float-right text-muted"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+                                <div class="commentor">
+                                    <a class="float-left pr-3" href="#">
+                                        <img src="images/client/02.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                    </a>
+                                    <div class="overflow-hidden d-block">
+                                        <h6 class="media-heading mb-0"><a href="javascript:void(0)" class="text-dark">{{comment.name}}</a></h6>
+                                        <small class="text-muted">{{comment.created_date}}</small>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="text-muted font-italic p-3 bg-light rounded">"{{comment.body}}"</p>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-2">
+                    <div class="p-4 shadow rounded position-relative overflow-hidden">
+                        <h5>Leave a comment :</h5>
+                        <form class="mt-4" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Your Comment</label>
+                                        <div>{{ comment_form.body }}</div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Name <span class="text-danger">*</span></label>
+                                        <div>{{ comment_form.name }}</div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Your Email <span class="text-danger">*</span></label>
+                                        <div>{{ comment_form.email }}</div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-12">
+                                        {{comment_form.news}}
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </form><!--end form-->
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="sidebar sticky-bar">
+                    <div class="widget">
+                        <div class="p-4 rounded border text-center">
+                            <h4 class="title">Author</h4>
+                            <div class="mt-3">
+                                <img src="images/client/05.jpg" class="img-fluid avatar avatar-medium rounded-circle shadow" alt="">
+                                <h6 class="mt-3">Lisa Marvel</h6>
+                                <p class="text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability is of great importance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget mt-4 pt-2">
+                        <div class="p-4 rounded border">
+                            <h4 class="title text-center">Catagories</h4>
+                            <ul class="list-unstyled mb-0 mt-3 catagory">
+                                <li><a href="jvascript:void(0)">Finance</a> <span class="float-right">13</span></li>
+                                <li><a href="jvascript:void(0)">Business</a> <span class="float-right">09</span></li>
+                                <li><a href="jvascript:void(0)">Blog</a> <span class="float-right">18</span></li>
+                                <li><a href="jvascript:void(0)">Corporate</a> <span class="float-right">20</span></li>
+                                <li><a href="jvascript:void(0)">Investment</a> <span class="float-right">22</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="widget mt-4 pt-2">
+                        <div class="p-4 rounded border">
+                            <h4 class="title text-center">Related Post</h4>
+                            <div class="widget-grid overflow-hidden mt-3">
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/blog/insta-1.jpg" alt="img-missing" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/blog/insta-2.jpg" alt="img-missing" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/blog/insta-3.jpg" alt="img-missing" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/blog/insta-4.jpg" alt="img-missing" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/blog/insta-5.jpg" alt="img-missing" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/blog/insta-6.jpg" alt="img-missing" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget mt-4 pt-2">
+                        <div class="p-4 rounded border text-center">
+                            <h4 class="title text">Tags Cloud</h4>
+
+                            <div class="tagcloud mt-3">
+                                <a href="jvascript:void(0)" class="rounded">Business</a>
+                                <a href="jvascript:void(0)" class="rounded">Finance</a>
+                                <a href="jvascript:void(0)" class="rounded">Marketing</a>
+                                <a href="jvascript:void(0)" class="rounded">Fashion</a>
+                                <a href="jvascript:void(0)" class="rounded">Bride</a>
+                                <a href="jvascript:void(0)" class="rounded">Lifestyle</a>
+                                <a href="jvascript:void(0)" class="rounded">Travel</a>
+                                <a href="jvascript:void(0)" class="rounded">Beauty</a>
+                                <a href="jvascript:void(0)" class="rounded">Video</a>
+                                <a href="jvascript:void(0)" class="rounded">Audio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget mt-4 pt-2">
+                        <div class="p-4 rounded border text-center">
+                            <h4 class="title">Social</h4>
+
+                            <ul class="list-unstyled social-icon social mt-3 mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="youtube" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
+                            </ul><!--end icon-->
+                        </div>
+                    </div>
+                </div><!--end sidebar-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Post detail end -->
+{% endblock %}
+
+<!--                            {% for comment in comments %}-->
+<!--                                <div class="comments" style="padding: 10px;">-->
+<!--                                  <p class="font-weight-bold">-->
+<!--                                    {{ comment.name }}-->
+<!--                                    <span class=" text-muted font-weight-normal">-->
+<!--                                      {{ comment.created_date }}-->
+<!--                                    </span>-->
+<!--                                  </p>-->
+<!--                                  {{ comment.body | linebreaks }}-->
+<!--                                </div>-->
+<!--                            {% endfor %}-->
+<!--                            <div class="card-body">-->
+<!--                                {% if new_comment %}-->
+<!--                                <div class="alert alert-success" role="alert">-->
+<!--                                  Your comment is awaiting moderation-->
+<!--                                </div>-->
+<!--                                {% else %}-->
+<!--                                <h3>Leave a comment</h3>-->
+<!--                                <form method="post" style="margin-top: 1.3em;">-->
+
+<!--                                  {{ comment_form.as_p }} {{ field.auto_id }}-->
+<!--                                  {% csrf_token %}-->
+<!--                                  <button type="submit" class="btn btn-primary  btn-lg">Submit</button>-->
+<!--                                </form>-->
+<!--                                {% endif %}-->
+<!--                            </div>-->

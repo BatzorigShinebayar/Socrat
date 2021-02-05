@@ -1,0 +1,88 @@
+{% extends 'web/base/base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block header %}
+<title>Portfolio Detail</title>
+{% endblock %}
+{% block Body %}
+<!-- Hero Start -->
+<section class="bg-half border-bottom bg-light d-table w-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="title-heading text-center">
+                    <h3 class="font-weight-normal"> Yellow background and <span class="font-weight-bold">books</span> </h3>
+                    <ul class="list-unstyled mt-4">
+                        <li class="list-inline-item h6 user text-muted mr-2"> <span class="text-dark">Client :</span> Lisa Marvel</li>
+                        <li class="list-inline-item h6 date text-muted"> <span class="text-dark">Date :</span> 1st February, 2020</li>
+                    </ul>
+                </div>
+            </div>  <!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<!-- Work Details Start -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            {% for portfolio in portfolio %}
+            <div class="col-lg-6 col-md-6 col-12 order-md-1 order-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <img src="{{ portfolio.image.url }}" class="img-fluid rounded fill" style="width:500px;height:500px" alt=""><br>
+                {% for portfolioimages in portfolioimages %}
+                <img src="{{ portfolioimages.image.url }}" class="img-fluid rounded fill" style="width:500px;height:500px" alt=""><br>
+                {% endfor %}
+            </div><!--end col-->
+
+            <div class="col-lg-6 col-md-6 col-12 mt-md-5 pt-md-5 order-md-2 order-1">
+                <div class="sticky-bar">
+                    <div class="work-details rounded shadow p-4">
+                        <h5 class="title border-bottom pb-3 mb-3">Project Info :</h5>
+                        <dl class="row mb-0">
+                            <dt class="col-md-4 col-5">Client :</dt>
+                            <dd class="col-md-8 col-7 text-muted">{{ portfolio.title}}</dd>
+
+                            <dt class="col-md-4 col-5">Category :</dt>
+                            <dd class="col-md-8 col-7 text-muted">{{ portfolio.sector }}</dd>
+
+                            <dt class="col-md-4 col-5">Date :</dt>
+                            <dd class="col-md-8 col-7 text-muted">{{ portfolio.start_date}}</dd>
+
+                            <dt class="col-md-4 col-5">Website :</dt>
+                            <dd class="col-md-8 col-7 text-muted">www.yourdomain.com</dd>
+
+                            <dt class="col-md-4 col-5">Location :</dt>
+                            <dd class="col-md-8 col-7 mb-0 text-muted">3/2/64 Mongus Street, UK</dd>
+                        </dl>
+                    </div>
+
+                    <div class="mt-4 pt-2">
+                        <p class="text-muted font-italic p-3 bg-light rounded">{{ portfolio.description }}</p>
+                    </div>
+
+                    <div class="mt-4 pt-2">
+                        <ul class="list-unstyled feature-list text-muted px-0 mt-4">
+                            <h6 class="media-heading mb-0 text-dark">{{ portfolio.title }}<small class="text-muted"> : Time Line</small></h6>
+                            {% for portfoliotimeline in portfoliotimeline %}
+                                <ul class="list-unstyled feature-list text-muted px-0 mt-4">
+                                   <li class="comment-desk mt-4">
+                                        <div class="commentor row">
+                                            <dt class="col-md-4 ">{{ portfoliotimeline.title }}</dt>
+                                            <dd class="col-md-8 mb-0 text-muted">{{ portfoliotimeline.date }}</dd>
+                                            <dt class="col-md-8 text-muted font-italic p-3 bg-light rounded">"{{ portfoliotimeline.description }}"</dt>
+                                        </div>
+                                    </li>
+                                </ul>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end col-->
+            {% endfor %}
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Work Details End -->
+
+{% endblock %}

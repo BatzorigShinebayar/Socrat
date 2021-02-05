@@ -1,0 +1,74 @@
+{% extends 'web/base/base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block header %}
+    <title>News</title>
+{% endblock %}
+{% block Body %}
+
+<!-- Hero Start -->
+{% for newsbanner in newsbanner %}
+    <section class="bg-half border-bottom d-table w-100" style="background: url({{newsbanner.image.url}}) center center;">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="title-heading text-center">
+                        <h3 class="font-weight-normal text-white mb-4"> {{ newsbanner.title }} </h3>
+                        <h3 class="font-weight-normal text-white mb-4"> {{ newsbanner.subtitle }} </h3>
+                    </div>
+                </div>  <!--end col-->
+            </div><!--end row-->
+        </div> <!--end container-->
+    </section><!--end section-->
+{% endfor %}
+<!-- Hero End -->
+
+<!-- Start News -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <ul class="col container-filter list-unstyled categories-filter text-center"  id="filter">
+                <li class="list-inline-item"><a class="categories d-block text-muted rounded" data-filter="">All</a></li>
+                {% for news_type in news_type %}
+                <li class="list-inline-item"><a class="categories d-block text-muted rounded" data-filter=".{{news_type.id}}">{{news_type.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container">
+        <div class="row projects-wrapper">
+            {% for newses in newses %}
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 {{newses.type.id}}">
+                        <div class="work-container work-classic">
+                             <img src="{{newses.image.url}}" style="height:200px;width:100%;object-fit: fill" class="img-fluid" alt="">
+                                <div class="overlay bg-dark"></div>
+                        </div>
+                        <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <h5><a href="javascript:void(0)" class="title text-dark">{{ newses.title }}</a></h5>
+                                <p class="text-muted">{{ newses.short_desc }}</p>
+
+                                <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark like mr-2"><i data-feather="heart" class="fea icon-sm like-icon mr-1"></i>36</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark comment"><i data-feather="message-circle" class="fea icon-sm mr-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="/news-detail/{{ newses.id }}" class="text-dark read">Read More <i class="mdi mdi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                    </div><!--end col-->
+            {% endfor %}
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End News -->
+
+{% endblock %}
